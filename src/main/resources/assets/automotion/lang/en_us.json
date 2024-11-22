@@ -1,5 +1,7 @@
 {
   "item.automotion.molybdenum_ingot": "Molybdenum ingot",
   "item.automotion.raw_molybdenum": "Raw molybdenum",
+  "block.automotion.molybdenum_block": "Molybdenum block",
+  "block.automotion.raw_molybdenum_block": "Raw molybdenum block",
   "itemgroup.automotion": "Automotion"
 }

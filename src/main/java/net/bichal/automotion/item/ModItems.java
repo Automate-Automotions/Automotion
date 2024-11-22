@@ -24,8 +24,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Automotion.LOGGER.info("Registering mod items for " + Automotion.MOD_ID + "...");
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
 }

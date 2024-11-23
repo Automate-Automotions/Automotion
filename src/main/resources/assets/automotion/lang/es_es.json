@@ -3,5 +3,8 @@
   "item.automotion.raw_molybdenum": "Molibdeno en bruto",
   "block.automotion.molybdenum_block": "Bloque de molibdeno",
   "block.automotion.raw_molybdenum_block": "Bloque de molibdeno en bruto",
+  "block.automotion.molybdenum_ore": "Mena de molibdeno",
+  "block.automotion.deepslate_molybdenum_ore": "Mena de molibdeno de pizarra profunda",
+  "item.automotion.molybdenum_nugget": "Pepita de molibdeno",
   "itemgroup.automotion": "Automotion"
 }

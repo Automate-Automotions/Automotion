@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "automotion:molybdenum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "automotion:molybdenum_nugget"
+  }
+}

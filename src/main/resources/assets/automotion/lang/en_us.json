@@ -6,5 +6,12 @@
   "block.automotion.molybdenum_ore": "Molybdenum ore",
   "block.automotion.deepslate_molybdenum_ore": "Deepslate molybdenum ore",
   "item.automotion.molybdenum_nugget": "Molybdenum nugget",
+  "item.automotion.thorium_ingot": "Thorium ingot",
+  "item.automotion.raw_thorium": "Raw thorium",
+  "block.automotion.thorium_block": "Thorium block",
+  "block.automotion.raw_thorium_block": "Raw thorium block",
+  "block.automotion.thorium_ore": "Thorium ore",
+  "block.automotion.deepslate_thorium_ore": "Deepslate thorium ore",
+  "item.automotion.thorium_nugget": "Thorium nugget",
   "itemgroup.automotion": "Automotion"
 }

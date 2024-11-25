@@ -6,5 +6,12 @@
   "block.automotion.molybdenum_ore": "Mena de molibdeno",
   "block.automotion.deepslate_molybdenum_ore": "Mena de molibdeno de pizarra profunda",
   "item.automotion.molybdenum_nugget": "Pepita de molibdeno",
+  "item.automotion.thorium_ingot": "Lingote de torio",
+  "item.automotion.raw_thorium": "Torio en bruto",
+  "block.automotion.thorium_block": "Bloque de torio",
+  "block.automotion.raw_thorium_block": "Bloque de torio en bruto",
+  "block.automotion.thorium_ore": "Mena de torio",
+  "block.automotion.deepslate_thorium_ore": "Mena de torio de pizarra profunda",
+  "item.automotion.thorium_nugget": "Pepita de torio",
   "itemgroup.automotion": "Automotion"
 }

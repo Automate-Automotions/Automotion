@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "automotion:raw_molybdenum_block",
+    "automotion:molybdenum_block",
+    "automotion:molybdenum_ore",
+    "automotion:deepslate_molybdenum_ore"
+  ]
+}

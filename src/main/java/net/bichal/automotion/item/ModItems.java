@@ -13,17 +13,15 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item RAW_MOLYBDENUM = registerItem("raw_molybdenum", new Item(new FabricItemSettings()));
     public static final Item MOLYBDENUM_INGOT = registerItem("molybdenum_ingot", new Item(new FabricItemSettings()));
-
-    private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RAW_MOLYBDENUM);
-        entries.add(MOLYBDENUM_INGOT);
-    }
+    public static final Item MOLYBDENUM_NUGGET = registerItem("molybdenum_nugget", new Item(new FabricItemSettings()));
+    public static final Item RAW_THORIUM = registerItem("raw_thorium", new Item(new FabricItemSettings()));
+    public static final Item THORIUM_INGOT = registerItem("thorium_ingot", new Item(new FabricItemSettings()));
+    public static final Item THORIUM_NUGGET = registerItem("thorium_nugget", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Automotion.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
 }

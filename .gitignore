@@ -9,6 +9,10 @@ classes/
 
 *.launch
 
+# Automotion
+
+remappedSrc
+
 # idea
 
 .idea/

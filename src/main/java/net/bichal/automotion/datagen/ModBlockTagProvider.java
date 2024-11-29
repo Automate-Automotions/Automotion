@@ -22,22 +22,41 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.ORES)
                 .add(ModBlocks.MOLYBDENUM_ORE)
-                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE);
+                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE)
+                .add(ModBlocks.NETHER_THORIUM_ORE)
+                .add(ModBlocks.THORIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_THORIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_CHROMIUM_ORE)
+                .add(ModBlocks.CHROMIUM_ORE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RAW_MOLYBDENUM_BLOCK)
                 .add(ModBlocks.MOLYBDENUM_BLOCK)
                 .add(ModBlocks.MOLYBDENUM_ORE)
-                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE);
+                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE)
+                .add(ModBlocks.THORIUM_BLOCK)
+                .add(ModBlocks.NETHER_THORIUM_ORE)
+                .add(ModBlocks.THORIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_THORIUM_ORE)
+                .add(ModBlocks.RAW_CHROMIUM_BLOCK)
+                .add(ModBlocks.DEEPSLATE_CHROMIUM_ORE)
+                .add(ModBlocks.CHROMIUM_ORE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.MOLYBDENUM_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RAW_MOLYBDENUM_BLOCK)
-                .add(ModBlocks.MOLYBDENUM_ORE);
+                .add(ModBlocks.THORIUM_BLOCK)
+                .add(ModBlocks.NETHER_THORIUM_ORE)
+                .add(ModBlocks.THORIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_THORIUM_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE);
+                .add(ModBlocks.RAW_MOLYBDENUM_BLOCK)
+                .add(ModBlocks.MOLYBDENUM_BLOCK)
+                .add(ModBlocks.MOLYBDENUM_ORE)
+                .add(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE)
+                .add(ModBlocks.RAW_CHROMIUM_BLOCK)
+                .add(ModBlocks.DEEPSLATE_CHROMIUM_ORE)
+                .add(ModBlocks.CHROMIUM_ORE);
     }
 }

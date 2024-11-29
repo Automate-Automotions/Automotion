@@ -1,4 +1,5 @@
 {
+  "itemgroup.automotion": "Automotion",
   "item.automotion.molybdenum_ingot": "Molybdenum ingot",
   "item.automotion.raw_molybdenum": "Raw molybdenum",
   "block.automotion.molybdenum_block": "Molybdenum block",
@@ -13,5 +14,13 @@
   "block.automotion.thorium_ore": "Thorium ore",
   "block.automotion.deepslate_thorium_ore": "Deepslate thorium ore",
   "item.automotion.thorium_nugget": "Thorium nugget",
-  "itemgroup.automotion": "Automotion"
+  "block.automotion.nether_thorium_ore": "Nether thorium ore",
+  "item.automotion.chromium_ingot": "Chromium ingot",
+  "item.automotion.raw_chromium": "Raw chromium",
+  "block.automotion.raw_chromium_block": "Raw chromium block",
+  "block.automotion.chromium_ore": "Chromium ore",
+  "block.automotion.deepslate_chromium_ore": "Deepslate chromium ore",
+  "item.automotion.chromium_nugget": "Chromium nugget",
+  "item.automotion.wolfram_ingot": "Wolfram ingot",
+  "item.automotion.ruthenium_ingot": "Ruthenium ingot"
 }

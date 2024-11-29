@@ -1,4 +1,5 @@
 {
+  "itemgroup.automotion": "Automotion",
   "item.automotion.molybdenum_ingot": "Lingote de molibdeno",
   "item.automotion.raw_molybdenum": "Molibdeno en bruto",
   "block.automotion.molybdenum_block": "Bloque de molibdeno",
@@ -13,5 +14,13 @@
   "block.automotion.thorium_ore": "Mena de torio",
   "block.automotion.deepslate_thorium_ore": "Mena de torio de pizarra profunda",
   "item.automotion.thorium_nugget": "Pepita de torio",
-  "itemgroup.automotion": "Automotion"
+  "block.automotion.nether_thorium_ore": "Mena de torio del Nether",
+  "item.automotion.chromium_ingot": "Lingote de cromo",
+  "item.automotion.raw_chromium": "Cromo en bruto",
+  "block.automotion.raw_chromium_block": "Bloque de cromo en bruto",
+  "block.automotion.chromium_ore": "Mena de cromo",
+  "block.automotion.deepslate_chromium_ore": "Mena de cromo de pizarra profunda",
+  "item.automotion.chromium_nugget": "Pepita de cromo",
+  "item.automotion.wolfram_ingot": "Lingote de wolframio",
+  "item.automotion.ruthenium_ingot": "Lingote de rutenio"
 }

@@ -4,6 +4,10 @@
     "automotion:molybdenum_block",
     "automotion:raw_molybdenum_block",
     "automotion:deepslate_molybdenum_ore",
-    "automotion:molybdenum_ore"
+    "automotion:molybdenum_ore",
+    "automotion:thorium_block",
+    "automotion:raw_thorium_block",
+    "automotion:deepslate_thorium_ore",
+    "automotion:thorium_ore"
   ]
 }

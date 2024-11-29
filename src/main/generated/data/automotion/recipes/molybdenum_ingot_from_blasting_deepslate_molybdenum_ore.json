@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 110,
+  "experience": 0.8,
+  "group": "molybdenum",
+  "ingredient": {
+    "item": "automotion:deepslate_molybdenum_ore"
+  },
+  "result": "automotion:molybdenum_ingot"
+}

@@ -18,16 +18,26 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOLYBDENUM_ORE_PLACED_KEY = registerKey("molybdenum_ore_placed");
     public static final RegistryKey<PlacedFeature> THORIUM_ORE_PLACED_KEY = registerKey("thorium_ore_placed");
     public static final RegistryKey<PlacedFeature> NETHER_THORIUM_ORE_PLACED_KEY = registerKey("nether_thorium_ore_placed");
+    public static final RegistryKey<PlacedFeature> CHROMIUM_ORE_PLACED_KEY = registerKey("chromium_ore_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
         register(context, MOLYBDENUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOLYBDENUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(7,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-72), YOffset.fixed(20))));
 
         register(context, THORIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.THORIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(35))));
+
+        register(context, NETHER_THORIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_THORIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(7,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(8), YOffset.fixed(8))));
+
+        register(context, CHROMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CHROMIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-74), YOffset.fixed(25))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

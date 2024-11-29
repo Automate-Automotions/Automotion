@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "automotion:molybdenum_ore"
+          "Name": "automotion:chromium_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "automotion:deepslate_molybdenum_ore"
+          "Name": "automotion:deepslate_chromium_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

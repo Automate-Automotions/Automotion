@@ -1,5 +1,5 @@
 {
-  "feature": "automotion:molybdenum_ore",
+  "feature": "automotion:chromium_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,12 +8,12 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 20
+          "absolute": 25
         },
         "min_inclusive": {
-          "absolute": -72
+          "absolute": -74
         }
       }
     }

@@ -1,19 +1,19 @@
 {
-  "feature": "automotion:molybdenum_ore",
+  "feature": "automotion:thorium_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 4
+      "count": 2
     },
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 20
+          "absolute": 35
         },
         "min_inclusive": {
-          "absolute": -72
+          "absolute": -64
         }
       }
     }

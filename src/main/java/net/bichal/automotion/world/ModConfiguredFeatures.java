@@ -11,6 +11,7 @@ import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.FeatureConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 import java.util.List;
@@ -38,18 +39,17 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> netherThoriumOres =
                 List.of(OreFeatureConfig.createTarget(netherReplacables, ModBlocks.NETHER_THORIUM_ORE.getDefaultState()));
 
-        register(context, MOLYBDENUM_ORE_KEY, new OreFeatureConfig(overworldMolybdenumOres, 6));
-        register(context, NETHER_THORIUM_ORE_KEY, new OreFeatureConfig(netherThoriumOres, 9));
-        register(context, THORIUM_ORE_KEY, new OreFeatureConfig(overworldThoriumOres, 8));
-        register(context, CHROMIUM_ORE_KEY, new OreFeatureConfig(overworldChromiumOres, 6));
+        register(context, MOLYBDENUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMolybdenumOres, 6));
+        register(context, NETHER_THORIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherThoriumOres, 9));
+        register(context, THORIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThoriumOres, 8));
+        register(context, CHROMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldChromiumOres, 6));
     }
 
-    private static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
+    public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Automotion.MOD_ID, name));
     }
 
-    private static <FC extends OreFeatureConfig> void register(Registerable<ConfiguredFeature<?, ?>> context,
-                                                               RegistryKey<ConfiguredFeature<?, ?>> key, OreFeatureConfig configuration) {
-        context.register(key, new ConfiguredFeature<>(Feature.ORE, configuration));
+    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
+        context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }

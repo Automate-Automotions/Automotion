@@ -1,6 +1,0 @@
-// 1.20.1	2024-11-28T20:46:54.9239018	Automotion/Tags for minecraft:block
-22c58972febc3bfdd957cc940b7b94b3c36376d1 data\minecraft\tags\blocks\needs_diamond_tool.json
-f3a69e2e7e3a0668ccc684e020bf864a9af7c379 data\automotion\tags\blocks\automotion_ores.json
-801127a8bbe3b703a46f99c3e63e81f498dc2001 data\minecraft\tags\blocks\mineable\pickaxe.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
-a20ad99da4efe386e624ed9d87feaf43b84266e6 data\minecraft\tags\blocks\needs_iron_tool.json

@@ -49,7 +49,8 @@ public class ModConfiguredFeatures {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Automotion.MOD_ID, name));
     }
 
-    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
+    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
+                                                                                   RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }

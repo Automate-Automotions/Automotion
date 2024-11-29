@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "automotion:block/deepslate_thorium_ore"
+  }
+}

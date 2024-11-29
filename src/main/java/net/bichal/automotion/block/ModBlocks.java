@@ -13,6 +13,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.block.Block;
 
+import static net.bichal.automotion.Automotion.LOGGER;
+
 public class ModBlocks {
     public static final Block MOLYBDENUM_BLOCK = createBlock("molybdenum_block",
             new Block(FabricBlockSettings.create()
@@ -33,11 +35,20 @@ public class ModBlocks {
 
     public static final Block MOLYBDENUM_ORE = createBlock("molybdenum_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.create()
-                    .mapColor(MapColor.GRAY)
+                    .mapColor(MapColor.STONE_GRAY)
                     .instrument(Instrument.BASEDRUM)
                     .requiresTool()
                     .strength(5.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)
+            ));
+
+    public static final Block NETHER_THORIUM_ORE = createBlock("nether_thorium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.DARK_RED)
+                    .instrument(Instrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(3.5F, 3.5F)
+                    .sounds(BlockSoundGroup.NETHER_ORE)
             ));
 
     public static final Block DEEPSLATE_MOLYBDENUM_ORE = createBlock("deepslate_molybdenum_ore",
@@ -65,8 +76,8 @@ public class ModBlocks {
             ));
 
     public static final Block THORIUM_ORE = createBlock("thorium_ore",
-            new Block(FabricBlockSettings.create()
-                    .mapColor(MapColor.LIGHT_BLUE_GRAY)
+            new ExperienceDroppingBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.STONE_GRAY)
                     .instrument(Instrument.BASEDRUM)
                     .requiresTool()
                     .strength(4.5F, 5.0F)
@@ -80,6 +91,31 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)
             ));
 
+    public static final Block RAW_CHROMIUM_BLOCK = createBlock("raw_chromium_block",
+            new Block(FabricBlockSettings.create()
+                    .mapColor(MapColor.LIGHT_GRAY)
+                    .instrument(Instrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(5.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)
+            ));
+
+    public static final Block CHROMIUM_ORE = createBlock("chromium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.STONE_GRAY)
+                    .instrument(Instrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(5.0F, 5.5F)
+                    .sounds(BlockSoundGroup.STONE)
+            ));
+
+    public static final Block DEEPSLATE_CHROMIUM_ORE = createBlock("deepslate_chromium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copy(CHROMIUM_ORE)
+                    .mapColor(MapColor.DEEPSLATE_GRAY)
+                    .strength(6.0F, 6.5F)
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+            ));
+
     private static Block createBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Automotion.MOD_ID, name), block);
@@ -90,5 +126,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
+        LOGGER.info("[Automotion] Mod Blocks been initialized!");
     }
 }

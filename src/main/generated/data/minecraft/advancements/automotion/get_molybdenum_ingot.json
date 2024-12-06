@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "got_molybdenum_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "automotion:molybdenum_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/raw_thorium_block.png",
+    "description": {
+      "translate": "advancement.automotion.got_molybdenum_ingot.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "automotion:molybdenum_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.automotion.got_molybdenum_ingot.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_molybdenum_ingot"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "automotion:raw_thorium"
+  },
+  "result": "automotion:thorium_ingot",
+  "experience": 0.8,
+  "cookingtime": 100
+}

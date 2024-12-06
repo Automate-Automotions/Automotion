@@ -29,6 +29,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.RAW_CHROMIUM_BLOCK);
 
+        addDrop(ModBlocks.HIGH_TEMPERATURE_FURNACE);
+
         addDrop(ModBlocks.MOLYBDENUM_ORE, copperLikeOreDrops(ModBlocks.MOLYBDENUM_ORE, ModItems.RAW_MOLYBDENUM));
         addDrop(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE, ModItems.RAW_MOLYBDENUM));
 

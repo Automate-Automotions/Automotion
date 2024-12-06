@@ -2,17 +2,17 @@ package net.bichal.automotion.item;
 
 import net.bichal.automotion.Automotion;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import static net.bichal.automotion.Automotion.LOGGER;
-
 public class ModItems {
+    // Vanilla
+    public static final Item IRON_INGOT = Items.IRON_INGOT;
+
+    // Modded
     public static final Item RAW_MOLYBDENUM = registerItem("raw_molybdenum", new Item(new FabricItemSettings()));
     public static final Item MOLYBDENUM_INGOT = registerItem("molybdenum_ingot", new Item(new FabricItemSettings()));
     public static final Item MOLYBDENUM_NUGGET = registerItem("molybdenum_nugget", new Item(new FabricItemSettings()));
@@ -30,6 +30,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        LOGGER.info("[Automotion] Mod Items been initialized!");
+        System.out.println("[Automotion] Mod Items registered!");
     }
 }

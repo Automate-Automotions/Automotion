@@ -22,5 +22,9 @@
   "block.automotion.deepslate_chromium_ore": "Mena de cromo de pizarra profunda",
   "item.automotion.chromium_nugget": "Pepita de cromo",
   "item.automotion.wolfram_ingot": "Lingote de wolframio",
-  "item.automotion.ruthenium_ingot": "Lingote de rutenio"
+  "item.automotion.ruthenium_ingot": "Lingote de rutenio",
+  "block.automotion.high_temperature_furnace": "Horno de alta temperatura",
+  "container.high_temperature_furnace": "Horno de alta temperatura",
+  "advancement.automotion.got_molybdenum_ingot.title": "El comienzo de una nueva era",
+  "advancement.automotion.got_molybdenum_ingot.description": "Consigue tu primer lingote de molibdeno."
 }

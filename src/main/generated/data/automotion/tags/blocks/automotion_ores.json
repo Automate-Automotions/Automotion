@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "automotion:molybdenum_ore",
+    "automotion:deepslate_molybdenum_ore",
+    "automotion:nether_thorium_ore",
+    "automotion:thorium_ore",
+    "automotion:deepslate_thorium_ore",
+    "automotion:deepslate_chromium_ore",
+    "automotion:chromium_ore"
+  ]
+}

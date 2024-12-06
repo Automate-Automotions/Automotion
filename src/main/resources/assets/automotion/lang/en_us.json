@@ -22,5 +22,9 @@
   "block.automotion.deepslate_chromium_ore": "Deepslate chromium ore",
   "item.automotion.chromium_nugget": "Chromium nugget",
   "item.automotion.wolfram_ingot": "Wolfram ingot",
-  "item.automotion.ruthenium_ingot": "Ruthenium ingot"
+  "item.automotion.ruthenium_ingot": "Ruthenium ingot",
+  "block.automotion.high_temperature_furnace": "High-temperature furnace",
+  "container.high_temperature_furnace": "High-temperature furnace",
+  "advancement.automotion.got_molybdenum_ingot.title": "The beginning of a new era",
+  "advancement.automotion.got_molybdenum_ingot.description": "Get your first molybdenum ingot."
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "automotion:thorium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "automotion:thorium_nugget"
+  }
+}

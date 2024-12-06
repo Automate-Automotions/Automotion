@@ -10,10 +10,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.text.Text;
 
-import static net.bichal.automotion.Automotion.LOGGER;
+import static net.bichal.automotion.Automotion.*;
 
 public class ModItemGroups {
-    public static final ItemGroup MOLYBDENUM_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup AUTOMOTION = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Automotion.MOD_ID, "molybdenum_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.automotion"))
                     .icon(() -> new ItemStack(ModBlocks.MOLYBDENUM_BLOCK)).entries((displayContext, entries) -> {
@@ -49,9 +49,11 @@ public class ModItemGroups {
                         entries.add(ModItems.RUTHENIUM_INGOT);
                         entries.add(ModItems.WOLFRAM_INGOT);
 
+                        entries.add(ModBlocks.HIGH_TEMPERATURE_FURNACE);
+
                     }).build());
 
     public static void registerModItemGroups() {
-        LOGGER.info("[Automotion] Mod Item Groups been initialized!");
+        LOGGER.info("[{}] Mod Item Groups been initialized!", upperCaseFirst(MOD_ID));
     }
 }

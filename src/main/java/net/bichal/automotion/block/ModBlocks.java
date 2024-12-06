@@ -1,8 +1,9 @@
 package net.bichal.automotion.block;
 
-import net.bichal.automotion.Automotion;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.enums.Instrument;
@@ -11,9 +12,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.block.Block;
 
-import static net.bichal.automotion.Automotion.LOGGER;
+import static net.bichal.automotion.Automotion.*;
 
 public class ModBlocks {
     public static final Block MOLYBDENUM_BLOCK = createBlock("molybdenum_block",
@@ -116,16 +116,19 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)
             ));
 
+    public static final Block HIGH_TEMPERATURE_FURNACE = createBlock("high_temperature_furnace",
+            new HighTemperatureFurnaceBlock(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE)));
+
     private static Block createBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(Automotion.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, new Identifier(Automotion.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void registerModBlocks() {
-        LOGGER.info("[Automotion] Mod Blocks been initialized!");
+        LOGGER.info("[{}] Mod Blocks been initialized!", upperCaseFirst(MOD_ID));
     }
 }

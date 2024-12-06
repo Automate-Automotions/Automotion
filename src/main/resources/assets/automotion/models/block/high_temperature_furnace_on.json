@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "automotion:block/high_temperature_furnace_top",
+    "front": "automotion:block/high_temperature_furnace_front_on",
+    "side": "automotion:block/high_temperature_furnace_side"
+  }
+}

@@ -1,15 +1,11 @@
 package net.bichal.automotion.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.bichal.automotion.block.ModBlocks;
 import net.bichal.automotion.util.ModTags;
-import net.minecraft.registry.RegistryKeys;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -40,9 +36,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_THORIUM_ORE)
                 .add(ModBlocks.RAW_CHROMIUM_BLOCK)
                 .add(ModBlocks.DEEPSLATE_CHROMIUM_ORE)
-                .add(ModBlocks.CHROMIUM_ORE);
+                .add(ModBlocks.CHROMIUM_ORE)
+                .add(ModBlocks.HIGH_TEMPERATURE_FURNACE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.HIGH_TEMPERATURE_FURNACE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.THORIUM_BLOCK)

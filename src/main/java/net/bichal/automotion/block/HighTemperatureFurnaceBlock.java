@@ -9,6 +9,7 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -18,9 +19,11 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class HighTemperatureFurnaceBlock extends AbstractFurnaceBlock {
-
     public HighTemperatureFurnaceBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.stateManager.getDefaultState()
+                .with(FACING, Direction.NORTH)
+                .with(LIT, Boolean.FALSE));
     }
 
     @Override
@@ -31,14 +34,14 @@ public class HighTemperatureFurnaceBlock extends AbstractFurnaceBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlockEntities.HIGH_TEMPERATURE_FURNACE, HighTemperatureFurnaceBlockEntity::tick);
+        return checkType(world, type, ModBlockEntities.HIGH_TEMPERATURE_FURNACE_ENTITY);
     }
 
     @Override
     protected void openScreen(World world, BlockPos pos, PlayerEntity player) {
         BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof HighTemperatureFurnaceBlockEntity furnaceEntity) {
-            player.openHandledScreen(furnaceEntity); 
+        if (blockEntity instanceof HighTemperatureFurnaceBlockEntity) {
+            player.openHandledScreen((NamedScreenHandlerFactory) blockEntity);
         }
     }
 

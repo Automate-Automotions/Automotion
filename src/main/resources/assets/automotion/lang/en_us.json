@@ -25,6 +25,9 @@
   "item.automotion.ruthenium_ingot": "Ruthenium ingot",
   "block.automotion.high_temperature_furnace": "High-temperature furnace",
   "container.high_temperature_furnace": "High-temperature furnace",
+  "rei.category.high_temperature_furnace": "High-temperature furnace",
+  "rei.category.automotion.high_temperature_furnace": "High-temperature smelting",
   "advancement.automotion.got_molybdenum_ingot.title": "The beginning of a new era",
-  "advancement.automotion.got_molybdenum_ingot.description": "Get your first molybdenum ingot."
+  "advancement.automotion.got_molybdenum_ingot.description": "Get your first molybdenum ingot.",
+  "rei.automotion.high_temperature_furnace.xp_info": "%s XP in %s seconds"
 }

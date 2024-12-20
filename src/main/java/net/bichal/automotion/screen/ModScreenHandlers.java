@@ -9,6 +9,8 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 
+import static net.bichal.automotion.Automotion.*;
+
 public class ModScreenHandlers {
     public static final ScreenHandlerType<HighTemperatureFurnaceScreenHandler> HIGH_TEMPERATURE_FURNACE;
 
@@ -27,6 +29,6 @@ public class ModScreenHandlers {
     }
 
     public static void registerScreenHandlers() {
-        System.out.println("[Automotion] Mod Screen Handlers registered!");
+        LOGGER.info("[{}] Mod Screen Handlers registered!", upperCaseFirst(MOD_ID));
     }
 }

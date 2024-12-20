@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_molybdenum_ore": {
+    "has_raw_molybdenum": {
       "conditions": {
         "items": [
           {
             "items": [
-              "automotion:deepslate_molybdenum_ore"
+              "automotion:raw_molybdenum"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:molybdenum_ingot_from_blasting_deepslate_molybdenum_ore"
+        "recipe": "minecraft:molybdenum_ingot_from_smelting_raw_molybdenum"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate_molybdenum_ore",
+      "has_raw_molybdenum",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:molybdenum_ingot_from_blasting_deepslate_molybdenum_ore"
+      "minecraft:molybdenum_ingot_from_smelting_raw_molybdenum"
     ]
   },
   "sends_telemetry_event": false

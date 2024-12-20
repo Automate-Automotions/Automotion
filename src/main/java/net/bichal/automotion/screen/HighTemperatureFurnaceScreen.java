@@ -8,20 +8,17 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class HighTemperatureFurnaceScreen extends HandledScreen<HighTemperatureFurnaceScreenHandler> {
-
     private static final Identifier TEXTURE = new Identifier("minecraft", "textures/gui/container/furnace.png");
-
     public HighTemperatureFurnaceScreen(HighTemperatureFurnaceScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
-        this.backgroundWidth = 176;
-        this.backgroundHeight = 166;
+        this.backgroundWidth = 176; 
+        this.backgroundHeight = 166; 
     }
 
     @Override
     protected void init() {
         super.init();
     }
-
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
@@ -34,22 +31,21 @@ public class HighTemperatureFurnaceScreen extends HandledScreen<HighTemperatureF
     protected void drawForeground(DrawContext context, int mouseX, int mouseY) {
         int titleX = (this.backgroundWidth - this.textRenderer.getWidth(this.title)) / 2;
         context.drawText(this.textRenderer, this.title, titleX, 6, 0x404040, false);
+
+        context.drawText(this.textRenderer, this.playerInventoryTitle, 8, this.backgroundHeight - 94, 0x404040, false);
     }
 
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         RenderSystem.setShaderTexture(0, TEXTURE);
-
         context.drawTexture(TEXTURE, this.x, this.y, 0, 0, this.backgroundWidth, this.backgroundHeight);
 
         if (this.handler.isBurning()) {
-            int progress = this.handler.getSmeltProgress();
-            context.drawTexture(TEXTURE, this.x + 79, this.y + 35, 176, 14, progress + 1, 16);
+            int fuelHeight = this.handler.getFuelProgress();
+            context.drawTexture(TEXTURE, this.x + 56, this.y + 36 + 12 - fuelHeight, 176, 12 - fuelHeight, 14, fuelHeight);
         }
 
-        int fuelHeight = this.handler.getFuelProgress();
-        context.drawTexture(TEXTURE, this.x + 56, this.y + 36 + 12 - fuelHeight, 176, 12 - fuelHeight, 14, fuelHeight);
+        int smeltProgress = this.handler.getSmeltProgress();
+        context.drawTexture(TEXTURE, this.x + 79, this.y + 35, 176, 14, smeltProgress + 1, 16); // Reemplaza el índice Y
     }
-
-
 }

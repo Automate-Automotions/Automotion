@@ -1,8 +1,8 @@
 package net.bichal.automotion.world.gen;
 
+import net.bichal.automotion.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.bichal.automotion.world.ModPlacedFeatures;
 import net.minecraft.world.gen.GenerationStep;
 
 public class ModOreGeneration {

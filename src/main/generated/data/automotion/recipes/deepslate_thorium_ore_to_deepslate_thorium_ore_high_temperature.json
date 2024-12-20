@@ -1,0 +1,11 @@
+{
+  "type": "automotion:high_temperature_furnace",
+  "cookingtime": 220,
+  "experience": 0.8,
+  "ingredient": {
+    "item": "automotion:deepslate_thorium_ore"
+  },
+  "result": {
+    "item": "automotion:thorium_ingot"
+  }
+}

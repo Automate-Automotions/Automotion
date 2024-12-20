@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "automotion:raw_molybdenum"
-  },
-  "result": "automotion:molybdenum_ingot",
-  "experience": 0.8,
-  "cookingtime": 120
-}

@@ -15,7 +15,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "minecraft:textures/block/raw_thorium_block.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/raw_thorium_block.png",
     "description": {
       "translate": "advancement.automotion.got_molybdenum_ingot.description"
     },
@@ -35,7 +35,7 @@
     ]
   ],
   "rewards": {
-    "experience": 100
+    "experience": 1000
   },
   "sends_telemetry_event": true
 }

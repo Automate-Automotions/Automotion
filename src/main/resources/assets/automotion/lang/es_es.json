@@ -25,6 +25,9 @@
   "item.automotion.ruthenium_ingot": "Lingote de rutenio",
   "block.automotion.high_temperature_furnace": "Horno de alta temperatura",
   "container.high_temperature_furnace": "Horno de alta temperatura",
+  "rei.category.high_temperature_furnace": "Horno de alta temperatura",
+  "rei.category.automotion.high_temperature_furnace": "Fundición a alta temperature",
   "advancement.automotion.got_molybdenum_ingot.title": "El comienzo de una nueva era",
-  "advancement.automotion.got_molybdenum_ingot.description": "Consigue tu primer lingote de molibdeno."
+  "advancement.automotion.got_molybdenum_ingot.description": "Consigue tu primer lingote de molibdeno.",
+  "rei.automotion.high_temperature_furnace.xp_info": "%s XP en %s segundos"
 }

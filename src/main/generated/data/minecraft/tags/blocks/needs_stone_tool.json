@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "automotion:high_temperature_furnace"
+  ]
 }

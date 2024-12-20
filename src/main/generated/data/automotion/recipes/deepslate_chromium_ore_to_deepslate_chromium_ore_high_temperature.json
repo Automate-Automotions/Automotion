@@ -1,0 +1,11 @@
+{
+  "type": "automotion:high_temperature_furnace",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "automotion:deepslate_chromium_ore"
+  },
+  "result": {
+    "item": "automotion:chromium_ingot"
+  }
+}

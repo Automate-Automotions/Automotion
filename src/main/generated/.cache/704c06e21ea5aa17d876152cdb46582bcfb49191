@@ -1,7 +1,7 @@
-// 1.20.1	2024-12-06T17:38:35.7705125	Automotion/World Gen
+// 1.20.1	2024-12-20T20:31:39.9509262	Automotion/World Gen
 a42dea568c399eb114f6da54f1eeb78e74c2e88b data\automotion\worldgen\configured_feature\molybdenum_ore.json
-fcff3c0cce97ce2364b667baa1a64f30f7b7830f data\automotion\worldgen\configured_feature\chromium_ore.json
 ff7927be1471901d928d362e24575d85d77bb1c2 data\automotion\worldgen\configured_feature\thorium_ore.json
+fcff3c0cce97ce2364b667baa1a64f30f7b7830f data\automotion\worldgen\configured_feature\chromium_ore.json
 f9e5d4c8d4d58829800ec424c2527ba5d35ddc07 data\automotion\worldgen\placed_feature\nether_thorium_ore_placed.json
 f21ee69d35ae9042afc11ab1bab3729ebb022ad6 data\automotion\worldgen\configured_feature\nether_thorium_ore.json
 6fc93d48775de6e3ec324c15b7af049082ce4aab data\automotion\worldgen\placed_feature\chromium_ore_placed.json

@@ -26,7 +26,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                         ModItems.MOLYBDENUM_INGOT,
                         Text.translatable("advancement.automotion.got_molybdenum_ingot.title"),
                         Text.translatable("advancement.automotion.got_molybdenum_ingot.description"),
-                        new Identifier("textures/block/raw_thorium_block.png"),
+                        new Identifier("textures/gui/advancements/backgrounds/raw_thorium_block.png"),
                         AdvancementFrame.TASK,
                         true,
                         true,

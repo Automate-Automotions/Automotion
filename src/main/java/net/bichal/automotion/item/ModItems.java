@@ -8,6 +8,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import static net.bichal.automotion.Automotion.*;
+
 public class ModItems {
     // Vanilla
     public static final Item IRON_INGOT = Items.IRON_INGOT;
@@ -30,6 +32,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        System.out.println("[Automotion] Mod Items registered!");
+        LOGGER.info("[{}] Mod Items registered!", upperCaseFirst(MOD_ID));
     }
 }

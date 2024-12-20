@@ -1,0 +1,11 @@
+{
+  "type": "automotion:high_temperature_furnace",
+  "cookingtime": 200,
+  "experience": 0.75,
+  "ingredient": {
+    "item": "automotion:deepslate_molybdenum_ore"
+  },
+  "result": {
+    "item": "automotion:molybdenum_ingot"
+  }
+}

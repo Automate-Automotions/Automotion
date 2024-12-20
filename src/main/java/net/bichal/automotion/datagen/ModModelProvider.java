@@ -8,7 +8,6 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 
-
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -16,8 +15,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool molybdenumPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOLYBDENUM_BLOCK);
-        BlockStateModelGenerator.BlockTexturePool thoriumPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THORIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLYBDENUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.THORIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_MOLYBDENUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLYBDENUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MOLYBDENUM_ORE);

@@ -1,8 +1,8 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 250,
-  "experience": 0.75,
+  "cookingtime": 400,
+  "experience": 0.8,
   "group": "molybdenum",
   "ingredient": {
     "item": "automotion:deepslate_molybdenum_ore"

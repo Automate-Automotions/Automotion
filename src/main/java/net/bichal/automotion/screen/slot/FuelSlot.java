@@ -1,9 +1,9 @@
 package net.bichal.automotion.screen.slot;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 
 public class FuelSlot extends Slot {
     public FuelSlot(Inventory inventory, int index, int x, int y) {

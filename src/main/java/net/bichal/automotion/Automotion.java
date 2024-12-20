@@ -4,13 +4,12 @@ import net.bichal.automotion.block.ModBlocks;
 import net.bichal.automotion.block.entity.ModBlockEntities;
 import net.bichal.automotion.item.ModItemGroups;
 import net.bichal.automotion.item.ModItems;
+import net.bichal.automotion.recipe.ModRecipes;
 import net.bichal.automotion.screen.ModScreenHandlers;
 import net.bichal.automotion.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.lang.*;
 
 public class Automotion implements ModInitializer {
     public static String upperCaseFirst(String val) {
@@ -30,9 +29,12 @@ public class Automotion implements ModInitializer {
 
         ModItemGroups.registerModItemGroups();
         ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
 
+        ModRecipes.registerRecipes();
+
+        ModBlocks.registerModBlocks();
         ModBlockEntities.registerBlockEntities();
+
         ModScreenHandlers.registerScreenHandlers();
     }
 }
